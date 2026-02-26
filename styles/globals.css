@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aubergine: #3D1A47;
+  --aubergine-mid: #5C2E6E;
+  --aubergine-light: #7A4090;
+  --saffron: #E8A020;
+  --saffron-light: #F2BC50;
+  --saffron-pale: #FBE9B8;
+  --offwhite: #FAF7F2;
+  --offwhite-warm: #F3EDE3;
+  --text-dark: #1E0A28;
+  --text-mid: #5A4060;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--offwhite);
+  color: var(--text-dark);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--offwhite-warm); }
+::-webkit-scrollbar-thumb { background: var(--aubergine-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--aubergine); }
+
+/* Selection */
+::selection {
+  background: var(--saffron-pale);
+  color: var(--aubergine);
+}
+
+/* Focus Fora utility classes */
+@layer components {
+  .ff-btn-primary {
+    @apply bg-aubergine text-offwhite px-6 py-3 text-sm font-medium tracking-wide
+           rounded-sm transition-all duration-300 hover:bg-saffron hover:text-aubergine
+           hover:-translate-y-0.5 hover:shadow-lg hover:shadow-saffron/30;
+  }
+
+  .ff-btn-secondary {
+    @apply border border-aubergine text-aubergine px-6 py-3 text-sm font-medium
+           tracking-wide rounded-sm transition-all duration-300
+           hover:bg-aubergine hover:text-offwhite;
+  }
+
+  .ff-card {
+    @apply bg-white border border-aubergine/[0.06] rounded-sm p-6
+           transition-all duration-300 hover:-translate-y-1
+           hover:shadow-xl hover:shadow-aubergine/10;
+  }
+
+  .ff-section-eyebrow {
+    @apply text-saffron text-xs font-medium tracking-[0.14em] uppercase;
+  }
+
+  .ff-section-title {
+    @apply font-serif text-aubergine font-light leading-tight;
+  }
+
+  .ff-tag {
+    @apply bg-aubergine text-offwhite text-xs font-medium px-3 py-1 rounded-sm
+           tracking-wide;
+  }
+
+  .ff-tag-saffron {
+    @apply bg-saffron text-aubergine text-xs font-medium px-3 py-1 rounded-sm
+           tracking-wide;
+  }
+}
