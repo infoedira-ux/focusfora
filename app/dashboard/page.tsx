@@ -112,6 +112,7 @@ export default function DashboardPage() {
     { icon: "🌱", title: "CBC", desc: "Guides for every grade", href: "/cbc", color: "bg-aubergine/5" },
     { icon: "🎓", title: "Pro Exams", desc: "CPA, ACCA, CIPS", href: "/exams", color: "bg-saffron-pale" },
     { icon: "📰", title: "Magazine", desc: "Vanva Publications", href: "/magazine", color: "bg-aubergine/5" },
+    { icon: "📖", title: "Set Books", desc: "KCSE study guides", href: "/setbooks", color: "bg-saffron-pale" },
   ];
 
   const streakEmoji = (profile?.study_streak || 0) >= 7 ? "🔥" :
