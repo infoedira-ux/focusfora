@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 
@@ -13,15 +13,32 @@ const levels = [
 export default function OnboardingPage() {
   const [selected, setSelected] = useState("");
   const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
   const router = useRouter();
   const supabase = createClient();
 
+  useEffect(() => {
+    // Check if user is logged in
+    async function check() {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) router.push("/login");
+    }
+    check();
+  }, []);
+
   async function handleContinue() {
     if (!selected) return;
-    setLoading(true);
+    setSaving(true);
     const { data: { user } } = await supabase.auth.getUser();
     if (user) {
-      await supabase.from("profiles").upsert({ id: user.id, level: selected });
+      await supabase.from("profiles").upsert({
+        id: user.id,
+        email: user.email,
+        full_name: user.user_metadata?.full_name || user.email?.split("@")[0],
+        level: selected,
+        subscription_tier: "free",
+        study_streak: 0,
+      }, { onConflict: "id" });
     }
     router.push("/dashboard");
   }
@@ -53,9 +70,9 @@ export default function OnboardingPage() {
             </button>
           ))}
         </div>
-        <button onClick={handleContinue} disabled={!selected || loading}
+        <button onClick={handleContinue} disabled={!selected || saving}
           className="w-full ff-btn-primary py-4 disabled:opacity-40 disabled:cursor-not-allowed">
-          {loading ? "Setting up your space..." : "Enter Focus Fora →"}
+          {saving ? "Setting up your space..." : "Enter Focus Fora →"}
         </button>
       </div>
     </div>
