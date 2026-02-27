@@ -11,24 +11,17 @@ export default function ResearchPage() {
   async function handleSearch() {
     if (!query.trim()) return;
     setSearching(true);
-    const res = await fetch(`https://export.arxiv.org/search/?query=${encodeURIComponent(query)}&start=0&max_results=12&searchtype=all`);
-    const text = await res.text();
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(text, "text/xml");
-    const entries = Array.from(xml.querySelectorAll("entry"));
-    const papers = entries.map(e => ({
-      id: e.querySelector("id")?.textContent,
-      title: e.querySelector("title")?.textContent?.trim(),
-      summary: e.querySelector("summary")?.textContent?.trim(),
-      authors: Array.from(e.querySelectorAll("author name")).map(a => a.textContent).slice(0, 3).join(", "),
-      published: e.querySelector("published")?.textContent?.substring(0, 10),
-      link: e.querySelector("id")?.textContent,
-    }));
-    setResults(papers);
+    const res = await fetch(`/api/research?query=${encodeURIComponent(query)}`);
+    const data = await res.json();
+    setResults(data.papers || []);
     setSearching(false);
   }
 
-  const suggestions = ["climate change Kenya", "machine learning Africa", "mobile health Kenya", "food security East Africa", "renewable energy Kenya", "education technology Africa"];
+  const suggestions = [
+    "climate change Kenya", "machine learning Africa",
+    "mobile health Kenya", "food security East Africa",
+    "renewable energy Kenya", "education technology Africa"
+  ];
 
   return (
     <div className="min-h-screen bg-offwhite">
@@ -40,7 +33,7 @@ export default function ResearchPage() {
       <div className="px-6 md:px-12 py-10 max-w-4xl mx-auto">
         <p className="ff-section-eyebrow mb-2">Academic Research</p>
         <h1 className="font-serif text-4xl text-aubergine font-light mb-2">Research Library</h1>
-        <p className="text-[#5A4060] text-sm font-light mb-8">Search millions of free research papers from arXiv. Read abstracts, access full PDFs.</p>
+        <p className="text-[#5A4060] text-sm font-light mb-8">Search millions of free research papers from arXiv.</p>
 
         <div className="flex gap-3 mb-4 max-w-xl">
           <input value={query} onChange={(e) => setQuery(e.target.value)}
@@ -52,17 +45,24 @@ export default function ResearchPage() {
           </button>
         </div>
 
-        {results.length === 0 && (
+        {results.length === 0 && !searching && (
           <div className="mb-10">
-            <p className="text-xs text-[#5A4060] mb-3 uppercase tracking-wider">Try these searches:</p>
+            <p className="text-xs text-[#5A4060] mb-3 uppercase tracking-wider">Try these:</p>
             <div className="flex flex-wrap gap-2">
               {suggestions.map(s => (
-                <button key={s} onClick={() => { setQuery(s); }}
+                <button key={s} onClick={() => setQuery(s)}
                   className="ff-tag-saffron cursor-pointer hover:bg-saffron transition-colors">
                   {s}
                 </button>
               ))}
             </div>
+          </div>
+        )}
+
+        {searching && (
+          <div className="text-center py-16">
+            <div className="font-serif text-2xl text-aubergine animate-pulse">Searching papers...</div>
+            <p className="text-[#5A4060] text-sm mt-2 font-light">Fetching from arXiv</p>
           </div>
         )}
 
@@ -72,21 +72,19 @@ export default function ResearchPage() {
               <h3 className="font-serif text-lg text-aubergine mb-1 leading-tight">{paper.title}</h3>
               <p className="text-xs text-saffron font-medium mb-1">{paper.authors}</p>
               <p className="text-xs text-[#5A4060]/60 mb-3">Published: {paper.published}</p>
-
-              <p className={`text-sm text-[#5A4060] leading-relaxed ${expanded[paper.id!] ? "" : "line-clamp-3"}`}>
+              <p className={`text-sm text-[#5A4060] leading-relaxed ${expanded[paper.id] ? "" : "line-clamp-3"}`}>
                 {paper.summary}
               </p>
-
-              <div className="mt-4 flex gap-3 items-center">
-                <button onClick={() => setExpanded(p => ({ ...p, [paper.id!]: !p[paper.id!] }))}
+              <div className="mt-4 flex gap-3 items-center flex-wrap">
+                <button onClick={() => setExpanded(p => ({ ...p, [paper.id]: !p[paper.id] }))}
                   className="text-xs text-aubergine font-medium hover:text-saffron transition-colors">
-                  {expanded[paper.id!] ? "Show less ↑" : "Read full abstract ↓"}
+                  {expanded[paper.id] ? "Show less ↑" : "Read full abstract ↓"}
                 </button>
-                <a href={paper.link?.replace("abs", "pdf")} target="_blank" rel="noopener noreferrer"
+                <a href={paper.id?.replace("abs", "pdf")} target="_blank" rel="noopener noreferrer"
                   className="ff-btn-primary text-xs py-2 px-4">
                   View PDF →
                 </a>
-                <a href={paper.link!} target="_blank" rel="noopener noreferrer"
+                <a href={paper.id} target="_blank" rel="noopener noreferrer"
                   className="ff-btn-secondary text-xs py-2 px-4">
                   arXiv Page
                 </a>
@@ -97,7 +95,7 @@ export default function ResearchPage() {
 
         {results.length > 0 && (
           <div className="mt-6 text-center">
-            <p className="text-xs text-[#5A4060]/50">Showing {results.length} results from arXiv · All papers are free to access</p>
+            <p className="text-xs text-[#5A4060]/50">{results.length} results · All papers free to access via arXiv</p>
           </div>
         )}
       </div>
