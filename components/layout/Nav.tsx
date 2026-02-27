@@ -36,10 +36,10 @@ export default function Nav() {
       </ul>
 
       <div className="hidden md:flex gap-3 items-center">
-        <Link href="/auth/login" className="text-xs font-medium text-aubergine/70 hover:text-aubergine transition-colors uppercase tracking-widest">
+        <Link href="/login" className="text-xs font-medium text-aubergine/70 hover:text-aubergine transition-colors uppercase tracking-widest">
           Sign In
         </Link>
-        <Link href="/auth/register" className="ff-btn-primary text-xs">
+        <Link href="/register" className="ff-btn-primary text-xs">
           Join Free
         </Link>
       </div>
@@ -63,8 +63,8 @@ export default function Nav() {
             </Link>
           ))}
           <div className="flex gap-3 pt-2">
-            <Link href="/auth/login" className="ff-btn-secondary text-xs flex-1 text-center py-2">Sign In</Link>
-            <Link href="/auth/register" className="ff-btn-primary text-xs flex-1 text-center py-2">Join Free</Link>
+            <Link href="/login" className="ff-btn-secondary text-xs flex-1 text-center py-2">Sign In</Link>
+            <Link href="/register" className="ff-btn-primary text-xs flex-1 text-center py-2">Join Free</Link>
           </div>
         </div>
       )}

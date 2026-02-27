@@ -26,7 +26,7 @@ export default function Hero() {
         </p>
 
         <div className="flex gap-4 items-center flex-wrap">
-          <Link href="/auth/register" className="ff-btn-primary">
+          <Link href="/register" className="ff-btn-primary">
             Start Learning Free
           </Link>
           <Link href="#features" className="text-aubergine text-sm font-medium flex items-center gap-2 group">
