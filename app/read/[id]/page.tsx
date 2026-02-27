@@ -16,7 +16,13 @@ export default function BookPage() {
     async function load() {
       try {
         const res = await fetch(`/api/book?id=${id}`);
-        const data = await res.json();
+        const text = await res.text();
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch {
+          throw new Error("Invalid response from server");
+        }
         if (data.error) throw new Error(data.error);
         setBook(data);
       } catch (e: any) {
