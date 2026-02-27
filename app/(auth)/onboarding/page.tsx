@@ -12,34 +12,40 @@ const levels = [
 
 export default function OnboardingPage() {
   const [selected, setSelected] = useState("");
-  const [loading, setLoading] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
   const router = useRouter();
   const supabase = createClient();
 
   useEffect(() => {
-    // Check if user is logged in
     async function check() {
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) router.push("/login");
+      if (!user) { router.push("/login"); return; }
+      setUserId(user.id);
     }
     check();
   }, []);
 
   async function handleContinue() {
-    if (!selected) return;
+    if (!selected || !userId) return;
     setSaving(true);
-    const { data: { user } } = await supabase.auth.getUser();
-    if (user) {
-      await supabase.from("profiles").upsert({
-        id: user.id,
-        email: user.email,
-        full_name: user.user_metadata?.full_name || user.email?.split("@")[0],
+
+    // First try update, then insert if not exists
+    const { error: updateError } = await supabase
+      .from("profiles")
+      .update({ level: selected })
+      .eq("id", userId);
+
+    if (updateError) {
+      // Profile doesn't exist yet, insert it
+      await supabase.from("profiles").insert({
+        id: userId,
         level: selected,
         subscription_tier: "free",
         study_streak: 0,
-      }, { onConflict: "id" });
+      });
     }
+
     router.push("/dashboard");
   }
 
