@@ -648,6 +648,17 @@ const SETBOOK_CONTENT: Record<string, any> = {
 
 const TABS = ["Overview", "Chapters", "Themes", "Characters", "Quotes", "Essays"];
 
+function shareToWhatsApp(title: string, id: string) {
+  const text = `📖 *${title}* — KCSE Study Guide%0A%0AChapter summaries, themes, characters, essay questions and exam quotes.%0A%0ARead free on Focus Fora 👇%0Ahttps://focusfora.vercel.app/setbooks/${id}`;
+  window.open(`https://wa.me/?text=${text}`, "_blank");
+}
+
+function copyLink(id: string) {
+  navigator.clipboard.writeText(`https://focusfora.vercel.app/setbooks/${id}`);
+  alert("Link copied!");
+}
+
+
 export default function SetbookPage() {
   const { id } = useParams();
   const [activeTab, setActiveTab] = useState("Overview");
