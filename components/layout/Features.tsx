@@ -56,6 +56,14 @@ const features = [
     href: "/exams",
   },
   {
+    icon: "🌍",
+    title: "International Education",
+    desc: "IGCSE, A-Levels, IB Diploma and American curriculum — subject guides, grading systems and university pathways. For Kenya's international school students.",
+    href: "/international",
+    badge: "New",
+    badgeColor: "bg-aubergine text-offwhite",
+  },
+  {
     icon: "📰",
     title: "Vanva Magazine",
     desc: "Three issues of beautiful design, innovation and culture from Vanva Innovations — readable in-browser. More issues coming.",
