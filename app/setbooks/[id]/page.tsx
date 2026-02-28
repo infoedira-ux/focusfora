@@ -695,6 +695,18 @@ export default function SetbookPage() {
           <p className="text-saffron text-xs uppercase tracking-widest mb-2">{book.emoji} KCSE Set Book Study Guide</p>
           <h1 className="font-serif text-4xl md:text-5xl text-offwhite font-light mb-2">{book.title}</h1>
           <p className="text-offwhite/60 text-sm">{book.author} · {book.year}</p>
+        <div className="flex gap-3 mt-4">
+          <button
+            onClick={() => shareToWhatsApp(book.title, id as string)}
+            className="flex items-center gap-2 bg-[#25D366] text-white text-xs font-medium px-4 py-2 rounded-sm hover:bg-[#20bc5a] transition-colors">
+            📲 Share on WhatsApp
+          </button>
+          <button
+            onClick={() => navigator.clipboard.writeText(`https://focusfora.vercel.app/setbooks/${id}`).then(() => alert("Link copied!"))}
+            className="flex items-center gap-2 bg-white/10 text-offwhite text-xs font-medium px-4 py-2 rounded-sm hover:bg-white/20 transition-colors">
+            🔗 Copy Link
+          </button>
+        </div>
         </div>
       </div>
 
