@@ -131,6 +131,9 @@ export default function DashboardPage() {
       color: "bg-aubergine/5",
       textLight: false,
     },
+          { href: "/constitution", icon: "⚖️", label: "Constitution", desc: "Know your rights" },
+          { href: "/cbc-planner", icon: "📅", label: "Term Planner", desc: "CBC schemes of work" },
+          { href: "/schools", icon: "🏫", label: "Schools", desc: "Schools directory" },
     {
       icon: "📰",
       title: "Magazine",
