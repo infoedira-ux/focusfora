@@ -9,7 +9,7 @@ const CHAPTERS = [
     articles: [
           { num: "Article 1", title: "Sovereignty of the People", text: "All sovereign power belongs to the people of Kenya and shall be exercised only in accordance with this Constitution. Sovereign power is delegated to Parliament, the national executive, the judiciary, and county governments." },
           { num: "Article 2", title: "Supremacy of the Constitution", text: "This Constitution is the supreme law of Kenya. Any act or omission in contravention of this Constitution is invalid." },
-          { num: "Article 3", title: "Defence of the Constitution", text: "Every person has an obligation to respect, uphold and defend this Constitution. Any attempt to establish a government otherwise than through the Constitution is unlawful." }
+          { num: "Article 3", title: "Defence of the Constitution", text: "Every person has an obligation to respect, uphold and defend this Constitution. Any attempt to establish a government otherwise than through the Constitution is unlawful." },
     ],
     context: "Every Kenyan citizen has a constitutional duty to defend this Constitution. You cannot be punished for refusing to obey an unconstitutional order.",
     rights: ["A police officer cannot arrest you simply because a superior ordered it — the order must be lawful", "No court, Parliament or President can override the Constitution", "Citizens have standing to challenge unconstitutional laws in court"],
@@ -20,7 +20,7 @@ const CHAPTERS = [
     articles: [
           { num: "Article 4", title: "Declaration of the Republic", text: "Kenya is a sovereign republic. The Republic of Kenya shall be a multi-party democratic state founded on the national values and principles of governance." },
           { num: "Article 10", title: "National Values and Principles", text: "The national values include: patriotism, national unity, sharing and devolution of power, the rule of law, democracy, participation of the people, human dignity, equity, social justice, inclusiveness, equality, human rights, non-discrimination, protection of the marginalised, good governance, integrity, transparency and accountability." },
-          { num: "Article 11", title: "Culture", text: "Culture is the foundation of the nation. The State shall promote all forms of national and cultural expression." }
+          { num: "Article 11", title: "Culture", text: "Culture is the foundation of the nation. The State shall promote all forms of national and cultural expression." },
     ],
     context: "Article 10 national values are binding on Parliament, courts, tribunals and all state officers. If a government decision ignores these values, it can be challenged.",
     rights: ["Public officers are legally bound by Article 10 values — not just ethically", "Any person can petition court if a government decision violates these values", "Transparency and accountability are constitutional obligations, not options"],
@@ -31,7 +31,7 @@ const CHAPTERS = [
     articles: [
           { num: "Article 13", title: "Retention and acquisition of citizenship", text: "A citizen by birth does not lose citizenship by acquiring citizenship of another country. Kenya recognises dual citizenship." },
           { num: "Article 14", title: "Citizenship by birth", text: "A person is a citizen by birth if on the day of the person's birth, whether or not the person is born in Kenya, either the mother or father of the person is a citizen." },
-          { num: "Article 15", title: "Citizenship by registration", text: "A person who has been married to a citizen for a period of at least seven years is entitled to apply for citizenship by registration." }
+          { num: "Article 15", title: "Citizenship by registration", text: "A person who has been married to a citizen for a period of at least seven years is entitled to apply for citizenship by registration." },
     ],
     context: "Kenya recognises dual citizenship since 2010. Kenyans in the diaspora can hold both Kenyan and foreign citizenship without losing Kenyan rights.",
     rights: ["Children born abroad to Kenyan parents are Kenyan citizens by birth", "Dual citizenship is constitutionally guaranteed — you cannot be stripped of Kenyan citizenship for holding another", "Stateless persons have a path to citizenship under Article 16"],
@@ -49,7 +49,7 @@ const CHAPTERS = [
           { num: "Article 35", title: "Access to Information", text: "Every citizen has the right of access to information held by the State and information held by another person and required for the exercise or protection of any right or fundamental freedom." },
           { num: "Article 36", title: "Freedom of Association", text: "Every person has the right to freedom of association." },
           { num: "Article 39", title: "Freedom of Movement and Residence", text: "Every person has the right to move freely in Kenya, to leave Kenya, to enter Kenya and to a passport." },
-          { num: "Article 40", title: "Protection of Right to Property", text: "Every person has the right, either individually or in association with others, to acquire and own property of any description in any part of Kenya." }
+          { num: "Article 40", title: "Protection of Right to Property", text: "Every person has the right, either individually or in association with others, to acquire and own property of any description in any part of Kenya." },
     ],
     context: "The Bill of Rights applies to all persons in Kenya — not only citizens. A non-citizen whose rights are violated can enforce them in court.",
     rights: ["You cannot be arrested without being told why — Article 49", "You have the right to remain silent upon arrest — this is constitutional", "Any evidence obtained through torture or inhumane treatment is inadmissible", "You must be brought before a court within 24 hours of arrest (48 hours on weekend/holiday)", "Bail is a constitutional right unless there are compelling reasons to deny it"],
@@ -61,7 +61,7 @@ const CHAPTERS = [
           { num: "Article 61", title: "Classification of land", text: "All land in Kenya belongs to the people of Kenya collectively as a nation, as communities and as individuals. Land is classified as public land, community land and private land." },
           { num: "Article 63", title: "Community Land", text: "Community land includes land lawfully held, managed or used by specific communities as community forests, grazing areas or shrines, ancestral lands, and any other land declared community land." },
           { num: "Article 64", title: "Private Land", text: "Private land includes land held by a person under freehold tenure, leasehold tenure or any other tenure." },
-          { num: "Article 66", title: "Regulation of land use", text: "The State may regulate the use of any land in the interest of defence, public safety, public order, public morality, public health or land use planning." }
+          { num: "Article 66", title: "Regulation of land use", text: "The State may regulate the use of any land in the interest of defence, public safety, public order, public morality, public health or land use planning." },
     ],
     context: "Land in Kenya has a maximum leasehold of 99 years for private individuals and companies. Freehold is only for citizens. Non-citizens cannot own freehold land in Kenya.",
     rights: ["Always search the land registry before purchasing any land — title deed verification is essential", "Historical land injustices can be reported to the National Land Commission", "Community land cannot be sold without the consent of the community", "Squatters who have occupied land for 12 years may have adverse possession rights — seek legal advice"],
@@ -73,7 +73,7 @@ const CHAPTERS = [
           { num: "Article 73", title: "Responsibilities of leadership", text: "Authority assigned to a state officer is a public trust to be exercised in a manner consistent with the purposes and objects of this Constitution. State officers must bring honour to the nation and dignity to the office." },
           { num: "Article 75", title: "Conduct of state officers", text: "A state officer shall behave, whether in public or private life, in a manner that avoids conflicts of interest. A state officer shall not maintain a bank account outside Kenya except in accordance with the law." },
           { num: "Article 76", title: "Financial probity of state officers", text: "A full-time state officer shall not participate in any other gainful employment." },
-          { num: "Article 77", title: "Restriction on activities of state officers", text: "A full-time state officer shall not participate in any other gainful employment." }
+          { num: "Article 77", title: "Restriction on activities of state officers", text: "A full-time state officer shall not participate in any other gainful employment." },
     ],
     context: "Chapter 6 has been used successfully to challenge politicians, public servants and judicial officers who do not meet integrity standards. The Ethics and Anti-Corruption Commission (EACC) enforces these provisions.",
     rights: ["Any citizen can petition the EACC regarding a state officer who violates Chapter 6", "Wealth declaration is mandatory for all state officers — failure is a constitutional violation", "A state officer convicted of a corruption-related offence must vacate office", "Chapter 6 applies to all state officers including county assembly members and ward administrators"],
@@ -84,7 +84,7 @@ const CHAPTERS = [
     articles: [
           { num: "Article 82", title: "Legislation on elections", text: "Parliament shall enact legislation to provide for the nomination of candidates for election and the conduct of elections and referenda." },
           { num: "Article 86", title: "Voting", text: "At every election, the Independent Electoral and Boundaries Commission shall ensure that votes are cast in secret, the counting of votes and announcement of results is transparent, and the results are announced promptly." },
-          { num: "Article 88", title: "Independent Electoral and Boundaries Commission", text: "The IEBC is responsible for conducting or supervising referenda and elections to any elective body. The IEBC is independent." }
+          { num: "Article 88", title: "Independent Electoral and Boundaries Commission", text: "The IEBC is responsible for conducting or supervising referenda and elections to any elective body. The IEBC is independent." },
     ],
     context: "Election results can be challenged in court. Presidential results must be challenged within 7 days of declaration. The Supreme Court determines presidential election petitions.",
     rights: ["You have a constitutional right to a secret ballot — no one can tell you how to vote", "Register to vote — it is both a right and a civic duty", "Political parties must respect internal democracy — members can enforce this", "Election observers have constitutional standing to access polling stations"],
@@ -95,7 +95,7 @@ const CHAPTERS = [
     articles: [
           { num: "Article 174", title: "Objects of devolution", text: "The objects of devolution include: promoting democratic and accountable exercise of power, fostering national unity, recognising the right of communities to manage their own affairs, protecting and promoting the interests and rights of minorities and marginalised communities, and ensuring equitable sharing of national and local resources." },
           { num: "Article 175", title: "Principles of devolution", text: "County governments shall be based on democratic principles and separation of powers and shall have reliable sources of revenue." },
-          { num: "Article 176", title: "County governments", text: "There shall be a county government for each county, consisting of a county assembly and a county executive." }
+          { num: "Article 176", title: "County governments", text: "There shall be a county government for each county, consisting of a county assembly and a county executive." },
     ],
     context: "County governments control significant resources — approximately 15 percent of national revenue is allocated to counties. Citizens can attend county assembly sessions, which are public.",
     rights: ["County assembly sessions are open to the public — attend and watch your representative", "County budgets must be publicly available — request one from your county government", "Citizens can petition county assemblies directly — no lawyer required", "County governors are subject to impeachment by county assemblies"],
@@ -105,7 +105,7 @@ const CHAPTERS = [
     overview: "This chapter governs the National Police Service, Kenya Defence Forces and National Intelligence Service. It contains important provisions about your rights when dealing with security forces.",
     articles: [
           { num: "Article 238", title: "National security", text: "National security is subject to the authority of the Constitution and Parliament. National security shall be pursued in compliance with the law." },
-          { num: "Article 244", title: "Objects of the National Police Service", text: "The National Police Service shall strive for the highest standards of professionalism and discipline among its members, prevention of corruption and promotion of and respect for human rights." }
+          { num: "Article 244", title: "Objects of the National Police Service", text: "The National Police Service shall strive for the highest standards of professionalism and discipline among its members, prevention of corruption and promotion of and respect for human rights." },
     ],
     context: "Police officers are bound by the Constitution and cannot claim to be following orders when violating rights. The Independent Policing Oversight Authority (IPOA) investigates police misconduct.",
     rights: ["You can file a complaint against any police officer at IPOA — ipoa.go.ke", "Police must identify themselves — they must show their service card if asked", "You have the right to legal representation from the moment of arrest", "A police officer who beats you has committed a criminal offence — document everything"],
@@ -115,11 +115,11 @@ const CHAPTERS = [
     overview: "Understanding how to enforce your constitutional rights is as important as knowing what they are. Kenya has multiple institutions established specifically to protect constitutional rights.",
     articles: [
           { num: "Article 22", title: "Enforcement of Bill of Rights", text: "Every person has the right to institute court proceedings claiming that a right or fundamental freedom in the Bill of Rights has been denied, violated or infringed." },
-          { num: "Article 23", title: "Authority of courts to uphold and enforce the Bill of Rights", text: "In any proceedings brought under Article 22, a court may grant appropriate relief including a declaration of rights, an injunction, a conservatory order, or an order for compensation." }
+          { num: "Article 23", title: "Authority of courts to uphold and enforce the Bill of Rights", text: "In any proceedings brought under Article 22, a court may grant appropriate relief including a declaration of rights, an injunction, a conservatory order, or an order for compensation." },
     ],
     context: "You do not need a lawyer to file a constitutional petition. The courts have been directed to be accessible. Filing fees are waived for Bill of Rights petitions in many cases.",
     rights: ["The Kenya National Human Rights Commission (KNHRC) handles rights complaints for free", "The Commission on Administrative Justice (Ombudsman) investigates maladministration", "Legal Aid is available through the National Legal Aid Service (NLAS) for those who cannot afford lawyers", "Constitutional petitions can be filed in the High Court in any county"],
-  }
+  },
 ];
 
 export default function ConstitutionPage() {
