@@ -222,8 +222,8 @@ const CHAPTERS: any[] = [
     rights: ["Courts must interpret the Constitution generously in favour of rights", "International human rights standards inform constitutional interpretation", "Any person can petition court for failure to implement the Constitution", "The Constitution is a living document meant to evolve with society"],
   },
   {
-    num: "18", title: "Schedules", icon: "📑",
-    overview: "The six schedules to the Constitution contain essential practical information including the distribution of functions between national and county governments.",
+    num: "18", title: "Transitional and Consequential Provisions", icon: "📋",
+    overview: "Provides for the transition from the former constitutional order to the current framework, including transitional arrangements for institutions, officers and pending matters. The Sixth Schedule contains most of the transitional provisions.",
     articles: [
           { num: "First Schedule", title: "Counties", text: "Lists all 47 counties of Kenya and their areas." },
           { num: "Second Schedule", title: "National Symbols", text: "Specifies the national flag, national anthem and coat of arms." },
@@ -231,7 +231,7 @@ const CHAPTERS: any[] = [
           { num: "Fifth Schedule", title: "Legislation", text: "Lists all legislation that Parliament was required to enact to implement the Constitution." },
           { num: "Sixth Schedule", title: "Transitional and Consequential Provisions", text: "Governs the transition from the old to the new constitutional order." }
     ],
-    context: "The Fourth Schedule is practically important — it lists exactly which government level is responsible for which service. Use it to know who to hold accountable.",
+    context: "The Schedules are separate from the Chapters. The Six Schedules (including the Fourth Schedule on distribution of functions and the Sixth Schedule on transitional provisions) supplement the main constitutional text but are not numbered chapters.",
     rights: ["Fourth Schedule determines whether to petition national or county government", "County functions include health services, early childhood education and local roads", "National functions include defence, foreign affairs, immigration and national security", "When a service fails, the Fourth Schedule tells you which government is responsible", "The Fifth Schedule lists all laws that Parliament was required to pass"],
   },
 ];
