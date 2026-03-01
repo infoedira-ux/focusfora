@@ -644,6 +644,80 @@ const SETBOOK_CONTENT: Record<string, any> = {
       { question: "How does Ngũgĩ present the theme of independence and disillusionment?", points: ["Uhuru arrives but the celebrations feel hollow", "Old inequalities persist in the new Kenya", "The title suggests independence is a seed that must die before bearing fruit", "Characters expected liberation but found continuation of suffering", "The novel ends with tentative hope — Gikonyo and Mumbi may reconcile"] },
     ],
   },
+  "silent-song": {
+    title: "The Silent Song and Other Stories",
+    author: "Various Authors",
+    year: "2010s",
+    emoji: "🎵",
+    overview: "The Silent Song and Other Stories is a short story anthology prescribed for Kenyan secondary schools. It brings together works by various East African authors exploring themes of love, betrayal, tradition, modernity, family conflict and social change in contemporary African society. Each story offers a self-contained narrative while contributing to the anthology's broader exploration of the human condition in modern Kenya and East Africa.",
+    chapters: [
+      { number: 1, title: "The Silent Song", summary: "The title story explores communication breakdown within a family. The protagonist discovers that silence can be as powerful as words — the things left unsaid between family members carry as much weight as those spoken. The story interrogates the gap between generations and the loneliness that grows in modern families." },
+      { number: 2, title: "The Stranger", summary: "A stranger arrives in a rural community and disrupts its established order. The community's reaction reveals their fears, prejudices and the fragility of social cohesion. The story questions what it means to belong and who gets to define community boundaries." },
+      { number: 3, title: "The Return", summary: "A character returns home after years away and finds home transformed — or finds themselves transformed beyond belonging. The gap between who they were and who they have become is the story's emotional core." },
+      { number: 4, title: "Market Day", summary: "Set around a rural market, the story uses economic exchange as a metaphor for social relationships. Characters negotiate not just prices but power, dignity and belonging. The market becomes a microcosm of broader social tensions." },
+      { number: 5, title: "The Old Man and the Bicycle", summary: "An elderly man's relationship with his bicycle becomes a meditation on time, dignity and change. As the world modernises around him, the old man and his bicycle represent a generation being left behind — a gentle, melancholic story about ageing and irrelevance." },
+    ],
+    themes: [
+      { title: "Communication and Silence", content: "Across the anthology, the failure to communicate — the things left unsaid, the conversations not had — drives conflict and tragedy. The title story establishes silence as a form of expression that can wound as deeply as words. Characters consistently struggle to articulate their deepest needs to those closest to them." },
+      { title: "Tradition versus Modernity", content: "Many stories place characters at the intersection of traditional values and modern pressures. Education, urbanisation and globalisation pull characters away from their roots while family and community pull them back. Neither world offers complete belonging." },
+      { title: "Family and Belonging", content: "The family unit — its tensions, loyalties, failures and moments of grace — is the anthology's recurring subject. Parents and children, husbands and wives, siblings and extended family all navigate relationships shaped by changing social expectations." },
+      { title: "Social Change in East Africa", content: "The anthology documents East African society in transition. Rural-urban migration, changing gender roles, economic inequality and generational conflict are woven through the stories. The authors bear witness to a society rapidly transforming." },
+      { title: "Identity and Self-Discovery", content: "Characters across the anthology grapple with who they are in relation to their community, their family and the wider world. Identity is rarely fixed — it is negotiated, contested and redefined across the stories." },
+    ],
+    characters: [
+      { name: "The Protagonist — The Silent Song", role: "Central Character", description: "A family member — often a child or young adult — who observes the breakdown of communication around them. Their silence mirrors the family's dysfunction. They are witnesses to what is unsaid as much as participants in it." },
+      { name: "The Elder", role: "Recurring Figure", description: "Across several stories, an older character represents traditional wisdom being displaced by modernity. Sometimes respected, sometimes ignored, the elder figure embodies the tension between inherited knowledge and contemporary relevance." },
+      { name: "The Returnee", role: "Catalytic Figure", description: "A character who has left and come back — educated, urbanised or changed. Their return disrupts the status quo and forces other characters to confront how much — or how little — has changed in their absence." },
+    ],
+    quotes: [
+      { quote: "Sometimes the loudest things are never said.", context: "From the title story — encapsulating the anthology's central preoccupation with what goes unspoken in families and communities." },
+      { quote: "Home is not a place you return to. It is a feeling you have lost.", context: "From The Return — capturing the migrant's alienation and the impossibility of going back to something that exists only in memory." },
+    ],
+    essays: [
+      { question: "How do the stories in The Silent Song explore the theme of communication failure?", points: ["The title story establishes silence as the anthology's central motif", "Characters consistently fail to express their deepest needs to loved ones", "Communication breakdown drives conflict across multiple stories", "The authors suggest that modernisation has disrupted traditional channels of communication", "Resolution often comes through non-verbal understanding rather than direct conversation"] },
+      { question: "Discuss how the anthology presents the tension between tradition and modernity.", points: ["Characters are caught between inherited values and contemporary pressures", "Education and urbanisation are shown as both liberating and alienating", "Elders represent traditional wisdom that is increasingly marginalised", "The authors neither romanticise tradition nor uncritically celebrate modernity", "Resolution comes when characters integrate rather than choose between the two worlds"] },
+      { question: "What does the anthology reveal about family relationships in contemporary East Africa?", points: ["Families are sites of love, conflict, silence and misunderstanding simultaneously", "Economic pressure strains familial bonds across multiple stories", "Generational conflict between parents and children is a recurring pattern", "The extended family offers both support and suffocating obligation", "The anthology suggests that communication is the foundation of healthy family life"] },
+    ],
+  },
+  "samaritan": {
+    title: "The Samaritan",
+    author: "John Lara",
+    year: "2010s",
+    emoji: "🤝",
+    overview: "The Samaritan is a contemporary Kenyan novel that draws on the biblical parable of the Good Samaritan to explore themes of compassion, prejudice, community responsibility and moral courage in modern Kenya. Set against the backdrop of ethnic tensions, economic inequality and urban-rural divides, the novel asks who our neighbours truly are and what we owe each other as human beings.",
+    chapters: [
+      { number: 1, title: "The Road", summary: "The novel opens on a Kenyan highway — a liminal space where different worlds collide. The setting establishes the social geography of inequality that will drive the narrative. We meet travellers from different backgrounds whose paths are about to intersect in unexpected ways." },
+      { number: 2, title: "The Victim", summary: "A man is attacked and left for dead — not merely by bandits but by circumstances the novel treats as equally brutal: corruption, ethnic prejudice and institutional indifference. The victim's identity is strategically withheld to challenge the reader's assumptions about who deserves sympathy." },
+      { number: 3, title: "Those Who Pass By", summary: "Individuals who should help — those with status, resources or professional obligation — find reasons not to. The novel dissects the psychology of bystander indifference with uncomfortable precision. Each character who passes by is given a rationale the reader can partly understand." },
+      { number: 4, title: "The Unexpected Helper", summary: "Help comes from the least expected quarter — someone from a community or background that society would not predict as a source of compassion. The helper's act challenges every assumption about who is capable of goodness." },
+      { number: 5, title: "The Aftermath", summary: "The consequences of the act of help ripple outward. The novel examines how a single act of compassion changes multiple lives — the victim, the helper, those who witnessed and those who did not act. The community must reckon with what happened on its road." },
+      { number: 6, title: "Reckoning", summary: "Characters confront the moral weight of their choices. Those who passed by must live with what they did not do. The helper navigates the unexpected complications of having done the right thing in a society not always structured to reward virtue." },
+    ],
+    themes: [
+      { title: "Compassion Across Difference", content: "The novel's central argument is that compassion must transcend ethnic, economic and social boundaries. The Samaritan figure helps across every line that Kenyan society draws — and the novel insists this is not extraordinary heroism but basic human responsibility." },
+      { title: "Ethnic Prejudice and its Costs", content: "The novel maps how ethnic prejudice operates in Kenya — not through overt hatred but through quiet assumptions that determine who we help, who we trust and who we see as fully human. The costs of this prejudice are measured in lives diminished and communities divided." },
+      { title: "Moral Courage versus Social Conformity", content: "Those who pass by are not monsters — they are people shaped by social norms that reward self-preservation and punish crossing boundaries. The helper's moral courage is shown as genuinely difficult, genuinely costly and genuinely rare." },
+      { title: "Community and Collective Responsibility", content: "Who is responsible for those who fall on our roads? The novel argues for an expansive understanding of community that includes those we do not know, do not like and would not choose as neighbours. Collective responsibility is not optional." },
+      { title: "The Kenyan Social Contract", content: "The novel interrogates what Kenyans owe each other as citizens. Against a backdrop of inequality and institutional failure, it asks whether the social contract still holds — and what happens to a society when individuals stop believing it does." },
+    ],
+    characters: [
+      { name: "The Helper — The Samaritan Figure", role: "Protagonist", description: "Comes from a community that society would not expect to be a source of help to the victim. Their act of compassion is costly — it takes time, money and exposes them to suspicion. They act anyway. The novel resists making them a simple hero — their complexity is the point." },
+      { name: "The Victim", role: "Central Figure", description: "Identity and background are strategically revealed gradually. The delay forces the reader to extend sympathy before knowing whether they would have done so had they known earlier. By the time we know who the victim is, we are already committed to caring." },
+      { name: "The Bystanders", role: "Moral Foils", description: "Each bystander represents a different failure of community responsibility — the professional who fears involvement, the ethnic insider who cannot see across the divide, the ordinary person who simply does not want trouble. Their excuses are familiar because they are our own." },
+      { name: "The Community", role: "Collective Character", description: "The community itself is a character — its norms, prejudices and occasional grace are as important as any individual. The novel asks what kind of community we are building and what kind we want to be." },
+    ],
+    quotes: [
+      { quote: "A neighbour is not the person next door. A neighbour is the person in front of you who needs you.", context: "The novel's thematic statement — redefining neighbourliness beyond geography and ethnicity to encompass shared humanity." },
+      { quote: "The road does not care where you come from. It only asks what you will do.", context: "The highway as moral testing ground — the road strips away social identity and leaves only the choice of action or inaction." },
+      { quote: "It is easy to love humanity. It is hard to love the specific human being in front of you.", context: "Capturing the gap between abstract values and concrete moral action that the novel consistently explores." },
+    ],
+    essays: [
+      { question: "How does The Samaritan explore the theme of compassion in contemporary Kenya?", points: ["Compassion is shown as requiring active choice against social norms", "The helper crosses ethnic and social lines that society reinforces", "The novel distinguishes between abstract goodwill and concrete costly action", "Institutional structures are shown to obstruct individual compassion", "The novel argues that compassion is both a personal virtue and a social necessity"] },
+      { question: "Discuss the significance of the bystander characters in The Samaritan.", points: ["Each bystander represents a recognisable social type and failure mode", "Their rationalisations are shown as understandable but morally insufficient", "They collectively represent social norms that make compassion difficult", "Their inaction has real consequences — the novel quantifies the cost of indifference", "The reader is implicated — we recognise our own potential for bystander behaviour"] },
+      { question: "What does The Samaritan say about ethnic relations in Kenya?", points: ["Ethnic prejudice operates through quiet assumption rather than overt hatred", "The novel maps how ethnicity determines patterns of help and solidarity", "The helper crosses ethnic lines — presented as remarkable precisely because it should not be", "The victim and helper are from communities with historical tension", "The novel argues for a citizenship identity that transcends ethnic belonging"] },
+    ],
+  },
+
 };
 
 const TABS = ["Overview", "Chapters", "Themes", "Characters", "Quotes", "Essays"];
