@@ -35,7 +35,7 @@ const CHAPTERS: any[] = [
           { num: "Article 16", title: "Dual Citizenship", text: "A citizen by birth who acquires citizenship of another country retains Kenyan citizenship." }
     ],
     context: "Kenyans in the diaspora can hold both Kenyan and foreign citizenship without losing any Kenyan rights.",
-    rights: ["Children born abroad to Kenyan parents are citizens by birth", "Dual citizenship is constitutionally guaranteed", "Stateless persons have a path to citizenship under Article 16", "Citizenship cannot be arbitrarily revoked"],
+    rights: ["Children born abroad to Kenyan parents are citizens by birth", "Dual citizenship is constitutionally guaranteed", "Stateless persons lawfully resident in Kenya may apply for citizenship under Article 15.", "Citizenship cannot be arbitrarily revoked"],
   },
   {
     num: "4", title: "The Bill of Rights", icon: "⚖️",
@@ -56,7 +56,7 @@ const CHAPTERS: any[] = [
           { num: "Article 50", title: "Fair Hearing", text: "Every person has the right to have any dispute resolved by application of law decided in a fair and public hearing before a court." }
     ],
     context: "The Bill of Rights applies to ALL persons in Kenya — not only citizens. A non-citizen whose rights are violated can enforce them in court.",
-    rights: ["You must be told why you are being arrested — Article 49", "You have the right to remain silent upon arrest", "You must be brought before a court within 24 hours of arrest", "Bail is a constitutional right — can only be denied for compelling reasons", "Torture and inhumane treatment are unconstitutional and criminal", "You have the right to a lawyer from the moment of arrest", "Economic and social rights including housing, food and water are enforceable"],
+    rights: ["You must be told why you are being arrested — Article 49", "You have the right to remain silent upon arrest", "You must be brought before a court within 24 hours of arrest", "Bail is a constitutional right under Article 49, but may be denied where compelling reasons exist such as flight risk or interference with witnesses.", "Torture and inhumane treatment are unconstitutional and criminal", "You have the right to a lawyer from the moment of arrest", "Economic and social rights including housing, food and water are enforceable"],
   },
   {
     num: "5", title: "Land and Environment", icon: "🌍",
@@ -70,7 +70,7 @@ const CHAPTERS: any[] = [
           { num: "Article 69", title: "Obligations in Respect of the Environment", text: "The State shall ensure sustainable exploitation of natural resources. Every person has a duty to cooperate with State organs to protect the environment." }
     ],
     context: "Always search the land registry before purchasing any land. Non-citizens cannot hold freehold land — maximum leasehold is 99 years.",
-    rights: ["Always verify title deed at the land registry before any purchase", "Historical land injustices can be reported to the National Land Commission", "Community land cannot be sold without community consent", "Squatters occupying land for 12 years may have adverse possession rights", "Environmental protection is a constitutional duty of every person"],
+    rights: ["Always verify title deed at the land registry before any purchase", "Historical land injustices can be reported to the National Land Commission", "Community land cannot be sold without community consent", "Claims of adverse possession are governed by statutory law (Limitation of Actions Act), not directly by the Constitution.", "Environmental protection is a constitutional duty of every person"],
   },
   {
     num: "6", title: "Leadership and Integrity", icon: "🎖️",
@@ -84,7 +84,7 @@ const CHAPTERS: any[] = [
           { num: "Article 79", title: "Ethics and Anti-Corruption Commission", text: "Parliament shall enact legislation to establish an independent ethics and anti-corruption commission." }
     ],
     context: "The EACC enforces Chapter 6. Any citizen can report a state officer who fails integrity standards.",
-    rights: ["Any citizen can petition EACC regarding a state officer violating Chapter 6", "Wealth declaration is mandatory for all state officers", "A state officer convicted of corruption must vacate office", "Chapter 6 applies to all state officers including ward administrators", "Conflict of interest must be declared and the officer must recuse themselves"],
+    rights: ["Any citizen can petition EACC regarding a state officer violating Chapter 6", "Wealth declaration is mandatory for all state officers", "A state officer may be removed from office for violation of Chapter 6 or upon conviction for corruption, subject to due process.", "Chapter 6 applies to all state officers including ward administrators", "Conflict of interest must be declared and the officer must recuse themselves"],
   },
   {
     num: "7", title: "Representation of the People", icon: "🗳️",
@@ -186,7 +186,7 @@ const CHAPTERS: any[] = [
           { num: "Article 247", title: "Independent Policing Oversight Authority", text: "Parliament shall enact legislation to establish an independent policing oversight authority." }
     ],
     context: "IPOA (Independent Policing Oversight Authority) investigates police misconduct. Every police officer is bound by the Constitution.",
-    rights: ["File police misconduct complaints at IPOA — ipoa.go.ke", "Police must show their service card if asked to identify themselves", "You have the right to legal representation from the moment of arrest", "A police officer who beats you has committed a criminal offence — document everything", "The KDF can only be deployed internally by order of the President with parliamentary approval"],
+    rights: ["File police misconduct complaints at IPOA — ipoa.go.ke", "Police must show their service card if asked to identify themselves", "You have the right to legal representation from the moment of arrest", "A police officer who beats you has committed a criminal offence — document everything", "The President may deploy KDF internally under Article 241, but such deployment must be reported to Parliament, which may approve or terminate it."],
   },
   {
     num: "15", title: "Commissions and Independent Offices", icon: "🔍",
@@ -196,7 +196,7 @@ const CHAPTERS: any[] = [
           { num: "Article 250", title: "Composition of Commissions", text: "Each commission shall consist of at least three but not more than nine members appointed through a competitive process." },
           { num: "Article 251", title: "Removal from Office", text: "A member of a commission or independent office may only be removed from office through a specific process involving a tribunal." }
     ],
-    context: "The 18 constitutional commissions include: IEBC, EACC, Kenya National Human Rights Commission, National Cohesion and Integration Commission, and Commission on Administrative Justice (Ombudsman).",
+    context: "The Constitution establishes 18 commissions and independent offices, including IEBC, EACC, KNHRC, NCIC and the Commission on Administrative Justice.",
     rights: ["KNHRC handles rights complaints for free — knchr.org", "EACC investigates corruption — eacc.go.ke", "Commission on Administrative Justice handles maladministration complaints", "IEBC manages all elections independently", "National Cohesion Commission handles hate speech and discrimination"],
   },
   {
@@ -208,7 +208,7 @@ const CHAPTERS: any[] = [
           { num: "Article 257", title: "Referendum", text: "An amendment to this Constitution that would alter the Bill of Rights, the Chapter on Sovereignty or the Chapter on Devolution must be approved by a referendum." }
     ],
     context: "One million Kenyans can propose a constitutional amendment through a popular initiative. The Bill of Rights and devolution chapters can only be changed by referendum.",
-    rights: ["One million registered voters can initiate a constitutional amendment", "The Bill of Rights cannot be amended without a referendum", "Devolution provisions require a referendum to change", "Any amendment reducing county allocation requires a referendum", "Citizens can participate in public hearings on proposed constitutional amendments"],
+    rights: ["One million registered voters may initiate a constitutional amendment through a popular initiative under Article 257.", "The Bill of Rights cannot be amended without a referendum", "Devolution provisions require a referendum to change", "Any amendment reducing county allocation requires a referendum", "Citizens can participate in public hearings on proposed constitutional amendments"],
   },
   {
     num: "17", title: "General Provisions", icon: "📋",
@@ -280,6 +280,9 @@ export default function ConstitutionPage() {
               <span className="absolute right-4 top-3 text-aubergine/30">🔍</span>
             </div>
 
+            <p className="text-xs text-[#5A4060] bg-saffron/10 border border-saffron/20 rounded-sm px-4 py-3 mb-6">
+              This is a simplified civic education summary of the Constitution of Kenya 2010. For the official legal text, refer to the Kenya Law website at kenyalaw.org.
+            </p>
             <div className="grid md:grid-cols-2 gap-4 mb-10">
               {filtered.map((ch, i) => (
                 <button key={ch.num} onClick={() => { setActive(CHAPTERS.indexOf(ch)); setTab("Overview"); }}
